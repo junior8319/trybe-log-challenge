@@ -1,6 +1,6 @@
 package log.trybe;
 
-public class Truck extends Vehicle {
+public class Truck extends Vehicle implements Transporter {
 
   @Override
   public void toFuel(String place, String driver, double price) {
@@ -10,5 +10,10 @@ public class Truck extends Vehicle {
   @Override
   public void refuellingsList() {
     System.out.println("Registrando na lista de abastecimentos de caminhão...");
+  }
+
+  @Override
+  public void toTransport() {
+    System.out.println("Caminhão transportando carga...");
   }
 }
