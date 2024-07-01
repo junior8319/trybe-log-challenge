@@ -11,7 +11,7 @@ public abstract class Vehicle {
   public Vehicle(String plate, int manufactureYear) {
     this.plate = plate;
     this.manufactureYear = manufactureYear;
-    this.refuellings = new ArrayList<String>();
+    this.refuellings = new ArrayList<>();
   }
 
   public String getPlate() {

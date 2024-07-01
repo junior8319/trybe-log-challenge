@@ -4,6 +4,7 @@ public class Car extends Vehicle{
 
   public Car(String plate, int manufactureYear) {
     super(plate, manufactureYear);
+    this.setFuelType("Flex");
   }
 
   @Override

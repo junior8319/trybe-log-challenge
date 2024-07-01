@@ -5,7 +5,7 @@ public class Container implements Transporter{
   double capacity;
 
   @Override
-  public void toTransport() {
-    System.out.println("Transportando em conteiner...");
+  public String toTransport(String origin, String destination) {
+    return "Transportando";
   }
 }

@@ -1,5 +1,5 @@
 package log.trybe;
 
 public interface Transporter {
-  public void toTransport();
+  public abstract String toTransport(String origin, String destination);
 }

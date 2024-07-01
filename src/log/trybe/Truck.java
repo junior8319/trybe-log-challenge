@@ -4,6 +4,7 @@ public class Truck extends Vehicle implements Transporter {
 
   public Truck(String plate, int manufactureYear) {
     super(plate, manufactureYear);
+    this.setFuelType("Diesel");
   }
 
   @Override
@@ -25,7 +26,12 @@ public class Truck extends Vehicle implements Transporter {
   }
 
   @Override
-  public void toTransport() {
-    System.out.println("Caminhão transportando carga...");
+  public String toTransport(String origin, String destination) {
+    return String.format(
+        "Veículo de placa %s, vai transportar carga de %s para %s",
+        this.getPlate(),
+        origin,
+        destination
+    );
   }
 }
